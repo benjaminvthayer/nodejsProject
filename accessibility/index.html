@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="https://github.com/benjaminvthayer/accessibility" xml:lang="en" lang="en">
   <head>
     <meta charset="utf-8">
     <title>Accessibility Forms</title>
@@ -15,28 +15,29 @@
     </ul>
     <div class="content">
       <h1>Application form</h1>
+<fieldset>
+       <legend><p>1. Personal Details</p></legend>
+      <form  action="Enter Personal Details" method="post" name="form1" id="form1">
 
-      <form action="" method="post" name="form1" id="form1">
-      <p>1. Personal Details</p>
-      <p>Name:
-      <input type="text" id="textfield"></p>
+      
+      <label for="textfield"><p>Name: <input type="text" id="textfield"></p></label>
 
       <p>Phone Number:
-      <input type="text" id="textfield3"></p>
+      <label for="textfield3"><input type="text" id="textfield3"></p>
 
-      <p>Date of Birth:
-      <input type="text" tabindex="-1" id="textfield2"></p>
+    
+      <label for="dateOfBirth">  <p>Date of Birth:<input type="text" tabindex="-1" id="dateOfBirth"></p></label>
 
-      <p><label for="textfield4">First Name:
-      <input type="text" id="textfield4"></p>
+      <label for="firstName"><p>First Name:
+      <input type="text" id="firstName"></p></label>
 
-      <p>Last Name:
-      <input type="text" tabindex="4" id="textfield5"></p>
+      <p>
+      <label for="textfield5">Last Name:<input type="text" tabindex="4" id="textfield5"></label></p>
 
       <p><label for="address">Address:</label>
-      <input type="text"></p>
+      <input type="text" id="address"></p>
 
-      <p>State:
+      <p><label for="state">State:</label>
        <select id="state">
         <option value="0">Select</option>
         <option value="Arizona">Arizona</option>
@@ -49,25 +50,25 @@
         <option value="Wyoming">Wyoming</option>
       </select>
       </p>
-
+</fieldset>
       <fieldset>
       <legend>2. Emergency Contact</legend>
-      <p>Name:
-      <input type="text" id="textfield13"></p>
+      <p>
+      <label for="emergencyName">Name:<input type="text" id="emergencyName"></label></p>
 
-      <p>Address:
-      <input type="text" id="textfield14"></p>
+      <p>
+     <label for="textfield14">Address: <input type="text" id="textfield14"></label></p>
 
-      <p>State
-      <input type="text" id="textfield15"></p>
+      <p>
+     <label for="textfield15"> State<input type="text" id="textfield15"></label></p>
 
-      <p>Telephone:
-      <input type="text" id="textfield16"></p>
+      <p>
+      <label for="telephone">Telephone:<input type="text" id="telephone"></label></p>
       </fieldset>
 
       <p>3. Citizenship</p>
-      <p><input type="radio">United States</p>
-      <p><input type="radio">Canada</p>
+      <p><label for="UnitedStates"><input type="radio" id = "UnitedStates">United States</label></p>
+      <p><label for="Canada"><input type="radio" id = "Canada">Canada</label></p>
 
       <p><input type="submit" value="Submit" id="button" name="button"></p>
       </form>

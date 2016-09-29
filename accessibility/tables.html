@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="https://github.com/benjaminvthayer/accessibility" xml:lang="en" lang="en">
   <head>
     <meta charset="utf-8">
     <title>Accessibility Tables</title>
@@ -21,22 +21,22 @@
       <table>
         <tbody><tr>
           <td> </td>
-          <td><b>Monday</b></td>
-          <td><b>Tuesday</b></td>
-          <td><b>Wednesday</b></td>
-          <td><b>Thursday</b></td>
-          <td><b>Friday</b></td>
+          <td id="Monday"><strong>Monday</strong></td>
+          <td id="Tuesday"><strong>Tuesday</strong></td>
+          <td id="Wedday"><strong>Wednesday</strong></td>
+          <td id="Thursday"><strong>Thursday</strong></td>
+          <td id="Friday"><strong>Friday</strong></td>
         </tr>
         <tr>
-          <td><b>8:00-9:00</b></td>
-          <td>Breakfast with Bob</td>
+          <td id="8-9"><strong>8:00-9:00</strong></td>
+          <td id="event1">Breakfast with Bob</td>
           <td> </td>
           <td> </td>
           <td> </td>
           <td> </td>
         </tr>
         <tr>
-          <td><b>9:00-10:00</b></td>
+          <td><strong>9:00-10:00</strong></td>
           <td> </td>
           <td> </td>
           <td>Meeting with Stewart</td>
@@ -48,13 +48,13 @@
 
       <table>
         <caption><h2>Table 2</h2></caption>
-        <thead><tr>
-          <th scope="col">Time</td>
-          <th scope="col">Monday</th>
-          <th scope="col">Tuesday</th>
-          <th scope="col">Wednesday</th>
-          <th scope="col">Thursday</th>
-          <th scope="col">Friday</th>
+        <thead id="days"><tr id= " daysRow">
+          <th id = "Time" scope="col">Time</td>
+          <th id="Monday2" scope="col">Monday</th>
+          <th id="Tuesday2" scope="col">Tuesday</th>
+          <th id="Wednesay2" scope="col">Wednesday</th>
+          <th id="Thursdday2" scope="col">Thursday</th>
+          <th id="Friday2" scope="col">Friday</th>
         </tr>
         </thead><tr>
         <tbody><tr>
