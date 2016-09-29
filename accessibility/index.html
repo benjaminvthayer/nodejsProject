@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Accessibility Forms</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="./index.html">Form</a></li>
+      <li><a href="./alt_text.html">Alt-Text</a></li>
+      <li><a href="./contrast.html">Contrast</a></li>
+      <li><a href="./headings.html">Headings</a></li>
+      <li><a href="./tables.html">Tables</a></li>
+    </ul>
+    <div class="content">
+      <h1>Application form</h1>
+
+      <form action="" method="post" name="form1" id="form1">
+      <p>1. Personal Details</p>
+      <p>Name:
+      <input type="text" id="textfield"></p>
+
+      <p>Phone Number:
+      <input type="text" id="textfield3"></p>
+
+      <p>Date of Birth:
+      <input type="text" tabindex="-1" id="textfield2"></p>
+
+      <p><label for="textfield4">First Name:
+      <input type="text" id="textfield4"></p>
+
+      <p>Last Name:
+      <input type="text" tabindex="4" id="textfield5"></p>
+
+      <p><label for="address">Address:</label>
+      <input type="text"></p>
+
+      <p>State:
+       <select id="state">
+        <option value="0">Select</option>
+        <option value="Arizona">Arizona</option>
+        <option value="California">California</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Montana">Montana</option>
+        <option value="Nevada">Nevada</option>
+        <option value="Utah">Utah</option>
+        <option value="Washington">Washington</option>
+        <option value="Wyoming">Wyoming</option>
+      </select>
+      </p>
+
+      <fieldset>
+      <legend>2. Emergency Contact</legend>
+      <p>Name:
+      <input type="text" id="textfield13"></p>
+
+      <p>Address:
+      <input type="text" id="textfield14"></p>
+
+      <p>State
+      <input type="text" id="textfield15"></p>
+
+      <p>Telephone:
+      <input type="text" id="textfield16"></p>
+      </fieldset>
+
+      <p>3. Citizenship</p>
+      <p><input type="radio">United States</p>
+      <p><input type="radio">Canada</p>
+
+      <p><input type="submit" value="Submit" id="button" name="button"></p>
+      </form>
+    </div>
+  </body>
+</html>
