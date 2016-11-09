@@ -1,0 +1,21 @@
+/*  style all the things -- try to make them decent looking :)  */
+.filler{
+	height :50%
+}
+
+.inputBar{
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+}
+
+.back{
+	background-color: #77ff77;
+}
+.result{
+	text-align:center;
+	font-size:300%
+}
+.inputArea{
+	padding-bottom:10px;
+}
